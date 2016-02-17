@@ -5,6 +5,8 @@ class profile::webserver (
   validate_bool($nginx)
   validate_bool($apache)
 
+  contain component::additional_vhosts
+
   if $nginx {
     contain component::nginx
   }
