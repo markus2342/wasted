@@ -16,6 +16,16 @@ nfs: true
 #proxy: http://proxy-server:8080/
 #no-proxy: localhost,127.0.0.1
 
+#additional_vhosts:
+#  'second-app.dev':
+#      app:  'php'
+#      path: '/var/www/app_name/second-app'
+#  'third-app.dev':
+#      app:  'php'
+#      path: '/var/www/app_name/third-app'
+#      config:
+#        vhost_port: 81
+
 ## puppet profiles
 profile::packages::names:
   - vim
